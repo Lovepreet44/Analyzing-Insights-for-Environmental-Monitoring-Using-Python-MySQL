@@ -26,3 +26,7 @@ The function rename_columns() renames the columns of the DataFrame to provide mo
 **temp -> temperature:** Renaming the "temp" column to "temperature" provides a clearer description of the data.</br>
 After renaming the columns, your updated column names will be:</br>
 timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motion smoke temperature These new column names should help provide a better understanding of the data within each column.
+
+* Task 3 :Checking Null values: The function null_values_check() checks for null values in each column of the DataFrame. The function returns a Series that contains the count of null values in each column.
+
+* 
