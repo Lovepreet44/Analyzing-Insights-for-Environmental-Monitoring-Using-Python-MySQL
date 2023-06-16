@@ -234,8 +234,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
 
   ##code
   # Solution : Task 12 :
-  SELECT device_id, AVG(temperature) AS average_temperature FROM (SELECT device_id, temperature FROM cleaned_environment WHERE ABS(temperature - (SELECT AVG(temperature) FROM cleaned_environment)) <= 3 * (SELECT STDDEV(temperature) FROM cleaned_environment)
- ) AS filtered_data GROUP BY device_id;
+  SELECT device_id, AVG(temperature) AS average_temperature FROM (SELECT device_id, temperature FROM cleaned_environment WHERE ABS(temperature - (SELECT AVG(temperature) FROM cleaned_environment)) <= 3 * (SELECT STDDEV(temperature) FROM cleaned_environment)) AS filtered_data GROUP BY device_id
 
   ##code
   # Solution : Task 13 :
