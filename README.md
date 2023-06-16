@@ -239,5 +239,10 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ##code
   # Solution : Task 13 :
   SELECT table1.device_id, table1.timestamp, table1.humidity FROM (SELECT device_id, timestamp, humidity, LAG(humidity,1) OVER ( PARTITION BY device_id ORDER BY timestamp), (humidity - (LAG(humidity,1) OVER ( PARTITION BY device_id ORDER BY timestamp))) diff,ABS((humidity - (LAG(humidity,1) OVER ( PARTITION BY device_id ORDER BY timestamp)))*100) c1 FROM `cleaned_environment`) table1 WHERE table1.c1 > 50;
+
+  ##code
+  # Solution : Task 14 :
+  select device_id, CASE WHEN EXTRACT(DAY FROM  timestamp) < 6 THEN 'Weekday' ELSE 'Weekend' END day_type,AVG(temperature) AS average_temperature FROM cleaned_environment GROUP BY device_id;
+
   
       
