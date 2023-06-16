@@ -244,5 +244,10 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   # Solution : Task 14 :
   select device_id, CASE WHEN EXTRACT(DAY FROM  timestamp) < 6 THEN 'Weekday' ELSE 'Weekend' END day_type,AVG(temperature) AS average_temperature FROM cleaned_environment GROUP BY device_id;
 
+  ##code
+  # Solution : Task 15 :
+  select device_id,timestamp, temperature, SUM(temperature)   OVER(PARTITION BY device_id ORDER BY timestamp) AS cumulative_temperature FROM cleaned_environment LIMIT 10;
+    
+
   
       
