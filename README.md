@@ -122,3 +122,13 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   #Use this final dataset and upload it on the provided database for performing analysis in  MySQL
   #To run this task click on the terminal and click on the run project
     ```
+
+  # Module 2: Data Analysis using SQL
+  * In this module, we worked on performing data analysis on the pre-processed data from the previous module and conducting Data Analysis using SQL.
+  * We generated queries for given problem statements. We performed queries after making connection to phpmyadmin database server.
+
+  ## Task 1 : Write an SQL query to solve the given problem statement.
+
+  * Find the average temperature recorded for each device.
+
+  The task is to calculate the average temperature recorded for each device in the dataset.
