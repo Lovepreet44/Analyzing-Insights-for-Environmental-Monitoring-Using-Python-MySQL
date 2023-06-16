@@ -16,23 +16,13 @@ Data Pre-processing is one of the important steps in data analytics because data
 * Task 2 : Renaming the Columns: </br>
 The function rename_columns() renames the columns of the DataFrame to provide more meaningful names. It uses a dictionary to map the existing column names to the new names. The DataFrame obtained from the previous task is used as input. The function returns the DataFrame with renamed columns.</br>
 ts -> timestamp: Renaming the "ts" column to "timestamp" provides a clearer description of the data.</br>
-
 device -> device_id: Renaming the "device" column to "device_id" specifies that the column represents the unique identifier of the device.</br>
-
 co -> carbon_monoxide: Renaming the "co" column to "carbon_monoxide" clarifies that the column contains data related to carbon monoxide levels.</br>
-
 humidity: No renaming required, as "humidity" already provides a meaningful description of the data.</br>
-
 light: No renaming required, as "light" already provides a meaningful description of the data.</br>
-
 lpg -> liquefied_petroleum_gas: Renaming the "lpg" column to "liquefied_petroleum_gas" specifies that the column represents data related to liquefied petroleum gas levels.</br>
-
 motion: No renaming required, as "motion" already provides a meaningful description of the data.</br>
-
 smoke: No renaming required, as "smoke" already provides a meaningful description of the data.</br>
-
 temp -> temperature: Renaming the "temp" column to "temperature" provides a clearer description of the data.</br>
-
 After renaming the columns, your updated column names will be:</br>
-
 timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motion smoke temperature These new column names should help provide a better understanding of the data within each column.
