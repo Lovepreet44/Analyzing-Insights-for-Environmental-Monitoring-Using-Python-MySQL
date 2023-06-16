@@ -131,4 +131,4 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
 
   * Find the average temperature recorded for each device.
 
-  The task is to calculate the average temperature recorded for each device in the dataset.
+    The task is to calculate the average temperature recorded for each device in the dataset.
