@@ -142,7 +142,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   
      The objective is to Determine the average temperature recorded in the cleaned_environment dataset.
      
-    ## Task 4 : Write an SQL query to solve the given problem statement.
+  ## Task 4 : Write an SQL query to solve the given problem statement.
   
    * Find the timestamp and temperature of the highest recorded temperature for each device.
   
@@ -150,9 +150,9 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
    ## Task 5 : Write an SQL query to solve the given problem statement.
    * Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
   
-      The goal is to Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
-     ## Task 6 : Write an SQL query to solve the given problem statement.
-     * Calculate the exponential moving average of temperature for each device limit to 10 devices.
+    The goal is to Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
+   ## Task 6 : Write an SQL query to solve the given problem statement.
+    * Calculate the exponential moving average of temperature for each device limit to 10 devices.
   
   Calculate the exponential moving average (EMA) of the temperature for each device. Retrieve the device ID, timestamp, temperature, and the EMA temperature for the first 10 devices from the 'cleaned_environment' table. The EMA temperature is calculated by partitioning the data based on the device ID, ordering it by the timestamp, and considering all preceding rows up to the current row
    ## Task 7 : Write an SQL query to solve the given problem statement.
