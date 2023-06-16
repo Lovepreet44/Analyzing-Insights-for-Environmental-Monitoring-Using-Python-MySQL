@@ -187,7 +187,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   * Calculate the cumulative sum of temperature for each device, ordered by timestamp limit to 10.
   
     The objective is to calculate the cumulative sum of temperature for each device, considering the records ordered by timestamp limit to 10
-    ``` sql
+  ``` sql
   ##code
   # Solution: Task 1 :
   SELECT device_id,AVG(temperature) FROM cleaned_environment GROUP BY device_id;
@@ -195,7 +195,8 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ##code
   # Solution : Task 2 :
   SELECT device_id , AVG(carbon_monoxide) AS average_carbon_monoxide from cleaned_environment group by device_id order by carbon_monoxide desc limit 5;
-    ```
+  
+  ```
    
   
       
