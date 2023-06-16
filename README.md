@@ -195,6 +195,23 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ##code
   # Solution : Task 2 :
   SELECT device_id , AVG(carbon_monoxide) AS average_carbon_monoxide from cleaned_environment group by device_id order by carbon_monoxide desc limit 5;
+  
+  ##code
+  # Solution : Task 3 :
+  SELECT AVG(temperature) from cleaned_environment;
+
+  ##code
+  # Solution : Task 4 :
+  SELECT device_id,timestamp,MAX(temperature) from cleaned_environment group by device_id;
+
+  ##code
+  # Solution : Task 5 :
+  SELECT device_id FROM cleaned_environment GROUP BY device_id HAVING MIN(temperature)<MAX(temperature);
+
+  ##code
+  # Solution : Task 6 :
+  
+  SELECT device_id,timestamp,temperature,AVG(temperature) over (partition by device_id order by timestamp ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) ema_temperature from cleaned_environment limit 10;
   ```
    
   
