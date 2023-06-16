@@ -82,7 +82,6 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   
   
   #Task4 :Removing Duplicates
-  
   def remove_duplicates():
       # do not edit the predefined function name
       df=rename_columns()
@@ -100,7 +99,6 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
       return df
   
   #Task 6:Data Type Conversion:
-  
   def convert_data_types():
       # do not edit the predefined function name
       df= handle_missing_values()
