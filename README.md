@@ -154,7 +154,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
    ## Task 6 : Write an SQL query to solve the given problem statement.
     * Calculate the exponential moving average of temperature for each device limit to 10 devices.
   
-  Calculate the exponential moving average (EMA) of the temperature for each device. Retrieve the device ID, timestamp, temperature, and the EMA temperature for the first 10 devices from the 'cleaned_environment' table. The EMA temperature is calculated by partitioning the data based on the device ID, ordering it by the timestamp, and considering all preceding rows up to the current row
+      Calculate the exponential moving average (EMA) of the temperature for each device. Retrieve the device ID, timestamp, temperature, and the EMA temperature for the first 10 devices from the 'cleaned_environment' table. The EMA temperature is calculated by partitioning the data based on the device ID, ordering it by the timestamp, and considering all preceding rows up to the current row
    ## Task 7 : Write an SQL query to solve the given problem statement.
    * Find the timestamps and devices where carbon monoxide level exceeds the average carbon monoxide level of all devices.
   
