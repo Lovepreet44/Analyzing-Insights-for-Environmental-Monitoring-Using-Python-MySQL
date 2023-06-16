@@ -132,3 +132,61 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   * Find the average temperature recorded for each device.
 
     The task is to calculate the average temperature recorded for each device in the dataset.
+
+  ## Task 2 : Write an SQL query to solve the given problem statement.
+
+  * Retrieve the top 5 devices with the highest average carbon monoxide levels.
+ ## Task 3 : Write an SQL query to solve the given problem statement.
+
+ * Calculate the average temperature recorded in the cleaned_environment table
+
+   The objective is to Determine the average temperature recorded in the cleaned_environment dataset.
+   
+ ## Task 4 : Write an SQL query to solve the given problem statement.
+
+ * Find the timestamp and temperature of the highest recorded temperature for each device.
+
+   This task requires identifying the highest recorded temperature for each device and retrieving the corresponding timestamp and     temperature values.
+ ## Task 5 : Write an SQL query to solve the given problem statement.
+ * Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
+
+    The goal is to Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
+   ## Task 6 : Write an SQL query to solve the given problem statement.
+   * Calculate the exponential moving average of temperature for each device limit to 10 devices.
+
+Calculate the exponential moving average (EMA) of the temperature for each device. Retrieve the device ID, timestamp, temperature, and the EMA temperature for the first 10 devices from the 'cleaned_environment' table. The EMA temperature is calculated by partitioning the data based on the device ID, ordering it by the timestamp, and considering all preceding rows up to the current row
+ ## Task 7 : Write an SQL query to solve the given problem statement.
+ * Find the timestamps and devices where carbon monoxide level exceeds the average carbon monoxide level of all devices.
+
+The objective is to identify the timestamps and devices where the carbon monoxide level exceeds the average carbon monoxide level across all devices.
+## Task 8 : Write an SQL query to solve the given problem statement.
+* Retrieve the devices with the highest average temperature recorded.
+
+The objective is to identify the devices that have recorded the highest average temperature among all the devices in the dataset.
+## Task 9 : Write an SQL query to solve the given problem statement.
+* Calculate the average temperature for each hour of the day across all devices.
+
+The goal is to calculate the average temperature for each hour of the day, considering data from all devices.
+## Task 10 : Write an SQL query to solve the given problem statement.
+* Which device(s) in the cleaned environment dataset have recorded only a single distinct temperature value?
+  ## Task 11 : Write an SQL query to solve the given problem statement.
+  *Find the devices with the highest humidity levels. The objective is to identify the devices that have recorded the highest humidity levels.
+   ## Task 12 : Write an SQL query to solve the given problem statement.
+  * Calculate the average temperature for each device, excluding outliers (temperatures beyond 3 standard deviations).
+
+This task requires calculating the average temperature for each device while excluding outliers, which are temperatures beyond 3 standard deviations from the mean.
+## Task 13 : Write an SQL query to solve the given problem statement.
+* Retrieve the devices that have experienced a sudden change in humidity (greater than 50% difference) within a 30-minute window.
+
+The goal is to identify devices that have undergone a sudden change in humidity, where the difference is greater than 50%, within a 30-minute time window.
+## Task 14 : Write an SQL query to solve the given problem statement.
+* Find the average temperature for each device during weekdays and weekends separately.
+
+This task involves calculating the average temperature for each device separately for weekdays and weekends.
+## Task 15 : Write an SQL query to solve the given problem statement.
+* Calculate the cumulative sum of temperature for each device, ordered by timestamp limit to 10.
+
+The objective is to calculate the cumulative sum of temperature for each device, considering the records ordered by timestamp limit to 10
+ 
+
+    
