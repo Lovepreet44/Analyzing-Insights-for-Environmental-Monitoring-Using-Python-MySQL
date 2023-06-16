@@ -40,11 +40,11 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
 * Task 8 : Generate Tables Using The Cleaned Dataset</br>
   Download the cleaned dataset by clicking on the 'cleaned_environment.csv' from File explorer</br>
 
-Utilize the MySQL database information provided in "Database info" to login manually and import the cleaned dataset and create the table name 'cleaned_environment' that should contains the below columns.</br>
+  Utilize the MySQL database information provided in "Database info" to login manually and import the cleaned dataset and create the     table name 'cleaned_environment' that should contains the below columns.</br>
 
-timestamp</br>
-device_id</br>
-carbon_monoxide</br>
-humidity</br>
-light</br>
-liquefied_petroleum_gas</br>
+  timestamp</br>
+  device_id</br>
+  carbon_monoxide</br>
+  humidity</br>
+  light</br>
+  liquefied_petroleum_gas</br>
