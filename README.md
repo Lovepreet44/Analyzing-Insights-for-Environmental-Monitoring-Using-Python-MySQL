@@ -30,3 +30,21 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
 * Task 3 : Checking for Null values: The function null_values_check() checks for null values in each column of the DataFrame. The function returns a Series that contains the count of null values in each column.
 
 * Task 4 : Removing duplicates: The function remove_duplicates() removes any duplicate rows from the DataFrame. It operates on the data frame obtained after renaming the columns. The function returns the DataFrame without any duplicate rows.
+
+* Task 5 : Handle Missing Values: The function handle_missing_values() removes any rows containing missing values (null values) from the DataFrame. The DataFrame obtained from the previous task is used as input. The function returns the DataFrame without any missing values.
+
+* Task 6 : Data Type Conversion: The function convert_data_types() converts the data types of selected columns in the DataFrame to their appropriate types. It uses the to_datetime() method to convert the "timestamp" column to datetime type, and the astype() method to convert the "humidity," "light," "motion," and "temperature" columns to float and boolean types. The DataFrame obtained after handling missing values is used as input. The function returns the DataFrame with the converted data types.
+
+* Task 7 : Exporting The Cleaned Dataset: The function export_the_dataset() exports the cleaned DataFrame to a new CSV file named 'cleaned_environment.csv'. It uses the to_csv() method of pandas DataFrame to write the data to the CSV file. The DataFrame obtained from the previous task is used as input and return the cleaned dataframe 'df'.
+
+* Task 8 : Generate Tables Using The Cleaned Dataset</br>
+  Download the cleaned dataset by clicking on the 'cleaned_environment.csv' from File explorer</br>
+
+Utilize the MySQL database information provided in "Database info" to login manually and import the cleaned dataset and create the table name 'cleaned_environment' that should contains the below columns.</br>
+
+timestamp</br>
+device_id</br>
+carbon_monoxide</br>
+humidity</br>
+light</br>
+liquefied_petroleum_gas</br>
