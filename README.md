@@ -150,7 +150,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
    ## Task 5 : Write an SQL query to solve the given problem statement.
    * Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
   
-    The goal is to Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
+     The goal is to Identify devices where the temperature has increased from the minimum recorded temperature to the maximum recorded temperature
    ## Task 6 : Write an SQL query to solve the given problem statement.
     * Calculate the exponential moving average of temperature for each device limit to 10 devices.
   
