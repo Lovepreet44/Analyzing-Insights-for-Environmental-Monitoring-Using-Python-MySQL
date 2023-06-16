@@ -210,8 +210,39 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
 
   ##code
   # Solution : Task 6 :
-  
   SELECT device_id,timestamp,temperature,AVG(temperature) over (partition by device_id order by timestamp ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) ema_temperature from cleaned_environment limit 10;
+
+  ##code
+  # Solution : Task 7 :
+  SELECT timestamp,device_id from cleaned_environment WHERE carbon_monoxide>(SELECT AVG(carbon_monoxide) FROM cleaned_environment);
+
+  ##code
+  # Solution : Task 8 :
+  SELECT device_id,AVG(temperature) FROM cleaned_environment GROUP BY device_id ORDER BY AVG(temperature) DESC;
+
+  ##code
+  # Solution : Task 9 :
+  SELECT HOUR(timestamp) AS hour_of_day,AVG(temperature) AS average_temperature FROM cleaned_environment GROUP BY HOUR(timestamp);
+
+  ##code
+  # Solution : Task 10 :
+  SELECT device_id FROM cleaned_environment GROUP BY device_id HAVING COUNT(DISTINCT temperature)=1;
+
+  ##code
+  # Solution : Task 11 :
+  SELECT device_id ,MAX(humidity) from cleaned_environment group by device_id order by humidity desc;
+
+  ##code
+  # Solution : Task 12 :
+  SELECT device_id, AVG(temperature) AS average_temperature FROM (SELECT device_id, temperature FROM cleaned_environment WHERE ABS(temperature - (SELECT AVG(temperature) FROM cleaned_environment)) <= 3 * (SELECT STDDEV(temperature) FROM cleaned_environment)
+ ) AS filtered_data GROUP BY device_id;
+
+  ##code
+  # Solution : Task 13 :
+  SELECT table1.device_id, table1.timestamp, table1.humidity FROM (SELECT device_id, timestamp, humidity, LAG(humidity,1) 
+OVER ( PARTITION BY device_id ORDER BY timestamp), (humidity - (LAG(humidity,1) 
+OVER ( PARTITION BY device_id ORDER BY timestamp))) diff, ABS((humidity - (LAG(humidity,1) 
+OVER ( PARTITION BY device_id ORDER BY timestamp)))*100) c1 FROM `cleaned_environment`) table1 WHERE table1.c1 > 50;
   ```
    
   
