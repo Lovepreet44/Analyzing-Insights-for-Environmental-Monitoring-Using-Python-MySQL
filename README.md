@@ -158,23 +158,23 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
    ## Task 7 : Write an SQL query to solve the given problem statement.
    * Find the timestamps and devices where carbon monoxide level exceeds the average carbon monoxide level of all devices.
   
-  The objective is to identify the timestamps and devices where the carbon monoxide level exceeds the average carbon monoxide level across all devices.
+     The objective is to identify the timestamps and devices where the carbon monoxide level exceeds the average carbon monoxide level across all devices.
   ## Task 8 : Write an SQL query to solve the given problem statement.
   * Retrieve the devices with the highest average temperature recorded.
   
-  The objective is to identify the devices that have recorded the highest average temperature among all the devices in the dataset.
+    The objective is to identify the devices that have recorded the highest average temperature among all the devices in the dataset.
   ## Task 9 : Write an SQL query to solve the given problem statement.
   * Calculate the average temperature for each hour of the day across all devices.
   
-  The goal is to calculate the average temperature for each hour of the day, considering data from all devices.
+    The goal is to calculate the average temperature for each hour of the day, considering data from all devices.
   ## Task 10 : Write an SQL query to solve the given problem statement.
   * Which device(s) in the cleaned environment dataset have recorded only a single distinct temperature value?
-    ## Task 11 : Write an SQL query to solve the given problem statement.
-    *Find the devices with the highest humidity levels. The objective is to identify the devices that have recorded the highest humidity levels.
-     ## Task 12 : Write an SQL query to solve the given problem statement.
-    * Calculate the average temperature for each device, excluding outliers (temperatures beyond 3 standard deviations).
+  ## Task 11 : Write an SQL query to solve the given problem statement.
+  *Find the devices with the highest humidity levels. The objective is to identify the devices that have recorded the highest humidity levels.
+  ## Task 12 : Write an SQL query to solve the given problem statement.
+  * Calculate the average temperature for each device, excluding outliers (temperatures beyond 3 standard deviations).
   
-  This task requires calculating the average temperature for each device while excluding outliers, which are temperatures beyond 3 standard deviations from the mean.
+    This task requires calculating the average temperature for each device while excluding outliers, which are temperatures beyond 3 standard deviations from the mean.
   ## Task 13 : Write an SQL query to solve the given problem statement.
   * Retrieve the devices that have experienced a sudden change in humidity (greater than 50% difference) within a 30-minute window.
   
