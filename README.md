@@ -182,7 +182,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ## Task 14 : Write an SQL query to solve the given problem statement.
   * Find the average temperature for each device during weekdays and weekends separately.
   
-  This task involves calculating the average temperature for each device separately for weekdays and weekends.
+    This task involves calculating the average temperature for each device separately for weekdays and weekends.
   ## Task 15 : Write an SQL query to solve the given problem statement.
   * Calculate the cumulative sum of temperature for each device, ordered by timestamp limit to 10.
   
