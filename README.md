@@ -170,7 +170,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ## Task 10 : Write an SQL query to solve the given problem statement.
   * Which device(s) in the cleaned environment dataset have recorded only a single distinct temperature value?
   ## Task 11 : Write an SQL query to solve the given problem statement.
-  *Find the devices with the highest humidity levels. The objective is to identify the devices that have recorded the highest humidity levels.
+  * Find the devices with the highest humidity levels. The objective is to identify the devices that have recorded the highest humidity levels.
   ## Task 12 : Write an SQL query to solve the given problem statement.
   * Calculate the average temperature for each device, excluding outliers (temperatures beyond 3 standard deviations).
   
@@ -178,7 +178,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ## Task 13 : Write an SQL query to solve the given problem statement.
   * Retrieve the devices that have experienced a sudden change in humidity (greater than 50% difference) within a 30-minute window.
   
-  The goal is to identify devices that have undergone a sudden change in humidity, where the difference is greater than 50%, within a 30-minute time window.
+    The goal is to identify devices that have undergone a sudden change in humidity, where the difference is greater than 50%, within a 30-minute time window.
   ## Task 14 : Write an SQL query to solve the given problem statement.
   * Find the average temperature for each device during weekdays and weekends separately.
   
@@ -186,7 +186,7 @@ timestamp device_id carbon_monoxide humidity light liquefied_petroleum_gas motio
   ## Task 15 : Write an SQL query to solve the given problem statement.
   * Calculate the cumulative sum of temperature for each device, ordered by timestamp limit to 10.
   
-  The objective is to calculate the cumulative sum of temperature for each device, considering the records ordered by timestamp limit to 10
+    The objective is to calculate the cumulative sum of temperature for each device, considering the records ordered by timestamp limit to 10
    
   
       
